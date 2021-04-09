@@ -10,7 +10,7 @@ namespace task3
             string path = "";
             Console.Write("Введите имя файла: ");
             path = Console.ReadLine();
-            Console.WriteLine("Вводите числа. Для окончания введите '.'");
+            Console.WriteLine("Вводите числа от 0 до 255. Для окончания введите '.'");
             string str;
             try
             {
