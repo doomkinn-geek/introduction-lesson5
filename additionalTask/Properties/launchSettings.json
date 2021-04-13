@@ -1,8 +1,7 @@
 {
   "profiles": {
     "additionalTask": {
-      "commandName": "Project",
-      "commandLineArgs": "8258086.txt output.txt"
+      "commandName": "Project"
     }
   }
 }

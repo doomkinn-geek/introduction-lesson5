@@ -100,7 +100,7 @@ namespace additionalTask
         static void PrintArgumentsRequerments()
         {
             Console.WriteLine("Invalid input arguments");
-            Console.WriteLine("Usage: WordsCount <input file> <output file>");
+            Console.WriteLine("Usage: file.exe <input file> <output file>");
         }
     }
 }
