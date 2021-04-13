@@ -1,7 +1,8 @@
 {
   "profiles": {
     "additionalTask": {
-      "commandName": "Project"
+      "commandName": "Project",
+      "commandLineArgs": "dostoevsky.txt out.txt"
     }
   }
 }

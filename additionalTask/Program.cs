@@ -44,10 +44,11 @@ namespace additionalTask
                     while ((s = sr.ReadLine()) != null)
                     {                        
                         Console.Write(".");
-                        string[] strs = s.Split(' ');
+                        string[] strs = s.Split(' ', '\n');
                         for (int i = 0; i < strs.Length; i++)
                         {
                             string key = strs[i].Trim();
+                            key = key.ToLower();
                             ParseString(key);
                         }
                     }
@@ -65,7 +66,7 @@ namespace additionalTask
             {
                 using (StreamWriter sw = new StreamWriter(File.Create(outputFile), Encoding.Unicode))
                 {
-                    foreach (KeyValuePair<string, int> entry in wordsCollection.OrderBy(key => key.Value))
+                    foreach (KeyValuePair<string, int> entry in wordsCollection.OrderByDescending(key => key.Value))
                     {
                         sw.WriteLine($"{entry.Key}, {entry.Value}");
                     }
